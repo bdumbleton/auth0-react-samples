@@ -7,6 +7,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import history from "./utils/history";
 import { getConfig } from "./config";
 import LoginButton from "./login";
+import LogoutButton from "./logout";
 
 const onRedirectCallback = (appState) => {
   history.push(
@@ -30,6 +31,7 @@ const providerConfig = {
 
 <div>
   <LoginButton>Login</LoginButton>
+  <LogoutButton>Logout</LogoutButton>
 </div>
 
 ReactDOM.render(
