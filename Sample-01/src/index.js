@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { Auth0Provider } from "@auth0/auth0-react";
 import history from "./utils/history";
 import { getConfig } from "./config";
+import LoginButton from "./login";
 
 const onRedirectCallback = (appState) => {
   history.push(
@@ -26,6 +27,10 @@ const providerConfig = {
     ...(config.audience ? { audience: config.audience } : null),
   },
 };
+
+<div>
+  <LoginButton>Login</LoginButton>
+</div>
 
 ReactDOM.render(
   <Auth0Provider {...providerConfig}>
