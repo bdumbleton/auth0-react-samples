@@ -8,6 +8,7 @@ import history from "./utils/history";
 import { getConfig } from "./config";
 import LoginButton from "./login";
 import LogoutButton from "./logout";
+import Profile from "./views/Profile";
 
 const onRedirectCallback = (appState) => {
   history.push(
@@ -32,6 +33,7 @@ const providerConfig = {
 <div>
   <LoginButton>Login</LoginButton>
   <LogoutButton>Logout</LogoutButton>
+  <Profile></Profile>
 </div>
 
 ReactDOM.render(
